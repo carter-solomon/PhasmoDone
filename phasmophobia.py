@@ -1298,7 +1298,6 @@ def end_game(times_won):
         play_again = input("\n\n\033[1;35;40mWould you like to play again? (yes or no) ")
         if play_again == "no":
             game_over = "true"
-            asking_end_game = "false"
             if times_won == 1:
                 print("\033[1;33;40mYou've now won", times_won, "time!")
             else:
@@ -1350,7 +1349,7 @@ def main():
 
     intro()
     ghost_list()
-    print(round_ghost) # this is just for testing remove when done -----------------------------------------------------
+    # print(round_ghost) # this is just for testing remove when done -----------------------------------------------------
     start_time = time.time()
 
     while game_over == "false":
